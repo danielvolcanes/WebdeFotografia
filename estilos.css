@@ -1,5 +1,259 @@
 @charset "utf-8";
 /* CSS Document */
+@-webkit-keyframes miAnimacion {
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
+@font-face{
+	font-family: "dancing-script";
+	src:url(fuente/dancing-script.regular.ttf);
+}
+
+div{
+	width: 900px;
+	margin: auto;
+}
+
 body {
 	font-family: "dancing-script";
+    background-color: #02010a;
+}
+
+img {
+	box-shadow: 2px 2px #02010a;
+}
+
+#contenido {
+	align-content: center;
+}
+
+header {
+	width: 100%;
+	color: white;
+	background-color: #5b7989;
+	border-radius: 10px 10px 0px 0px;
+	padding: 10px;
+	animation: miAnimacion 1.5s;
+}
+
+h1 {
+	text-shadow: 2px 2px #02010a;
+	margin-left: 10px;
+	display: inline;
+}
+
+nav {
+	display: inline;
+	float: right;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+
+#inicio, #paisajes, #retratos {
+	color: white;
+}
+
+#imagen-principal {
+	padding: 10px 20px;
+	background-color: #82c3a6;
+}
+
+#imagenlobo {
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+#imagenes-secundarias {
+	background-color: #d5c75f;
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: row;
+}
+
+footer {
+	background-color: #C6d5c5;
+	border-radius: 0px 0px 10px 10px;
+	padding: 10px;
+	margin: 0px;
+}
+
+#lista {
+	list-style-type: disc;
+}
+
+#facebook {
+	width: 18px;
+	box-shadow: 0px 0px;
+	border: black 1px solid;
+}
+
+#instgram {
+	width: 18px;
+	box-shadow: 0px 0px;
+	border: black 1px solid;
+}
+
+#twitter {
+	width: 18px;
+	box-shadow: 0px 0px;
+	border: black 1px solid;
+}
+
+#principalretratos {
+	background-color: #d5c75f;
+	border: 1px black;
+	padding: 10px 20px;
+	display: flex;
+	flex-grow: 3;
+}
+
+#principalpaisajes {
+	background-color: #d5c75f;
+	border: 1px black;
+	padding: 10px 20px
+}
+
+#mail, #afacebook, #ainstagram, #atwitter {
+	color: purple;
+	text-decoration: none
+}
+
+#mail:hover, #afacebook:hover, #ainstagram:hover, #atwitter:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+#imagen1 {
+	-webkit-filter: blur(10px);
+}
+
+#imagen2, #imagen4, #imagen6 {
+	-webkit-filter: grayscale(100%);
+}
+
+#imagen3 {
+	-webkit-filter: sepia(90%);
+}
+
+#imagenpaisaje:hover {
+	transform: rotate(10deg);
+	box-shadow: 2px 2px #82c3a6;
+	border: 2px black solid;
+}
+
+#imagenretrato:hover {
+	transform: translate(20px, -5px);
+	box-shadow: 2px 2px #82c3a6;
+	border: 2px black solid;
+}
+
+#apaisajes, #aretratos {
+	text-align: center;
+	margin-bottom: 50px;
+	color: dimgray;
+	text-decoration: none;
+}
+
+#apaisajes {
+	width: 50%;
+	margin-right: 5%;
+}
+#aretratos {
+	width: 50%
+}
+
+#imagenpaisaje {
+	width: 100%;
+}
+
+#imagenretrato {
+	width: 100%;
+}
+
+#apaisajes:hover, #aretratos:hover {
+		color: blue;
+		text-decoration: underline;
+		text-decoration-style: double
+}
+
+img[id^=imagen]{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	width: 33%;
+}
+
+@media (max-width:900px) {
+	div {
+		width: 100%;
+	}
+	h1 {
+		display: block;
+		text-align: center;
+	}
+	nav {
+		display: block;
+		float: none;
+		margin: auto;
+		text-align: center;
+	}
+	#imagenes-secundarias{
+		display: block;
+	}
+	#apaisajes, #aretratos {
+		display: block;
+		text-align: center;
+		color: dimgray;
+		text-decoration: none
+	}
+	#apaisajes:hover, #aretratos:hover {
+		display: block;
+		color: blue;
+		text-decoration: underline;
+		text-decoration-style: double
+	}
+	#imagenpaisaje{
+		display: block;
+		width: 100%;
+		margin: auto;
+	}
+	
+	#imagenretrato{
+		display: block;
+		width: 100%;
+		margin: auto;
+	}
+	h3 {
+		text-align: center;
+	}
+	#contacto {
+		display: block;
+		text-align: center;
+		list-style-position: inside;
+	}
+	#terminos {
+		display: block;
+		text-align: center;
+	}
+	#redessociales {
+		display: block;
+		text-align: center;
+	}
+	#derechos {
+		display: block;
+		text-align: center;
+	}
+	
+	img[id^=imagen] {
+		display: block;
+		width: 100%;
+		margin-bottom: 50px;
+	}
 }
