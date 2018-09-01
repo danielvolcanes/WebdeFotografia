@@ -75,7 +75,6 @@ nav {
 	background-color: #d5c75f;
 	padding: 10px 20px;
 	display: flex;
-	flex-direction: row;
 }
 
 footer {
@@ -111,14 +110,12 @@ footer {
 	background-color: #d5c75f;
 	border: 1px black;
 	padding: 10px 20px;
-	display: flex;
-	flex-grow: 3;
 }
 
 #principalpaisajes {
 	background-color: #d5c75f;
 	border: 1px black;
-	padding: 10px 20px
+	padding: 10px 20px;
 }
 
 #mail, #afacebook, #ainstagram, #atwitter {
@@ -187,8 +184,7 @@ footer {
 img[id^=imagen]{
 	margin-bottom: 10px;
 	margin-top: 10px;
-	width: 33%;
-}
+	}
 
 @media (max-width:900px) {
 	div {
@@ -211,7 +207,8 @@ img[id^=imagen]{
 		display: block;
 		text-align: center;
 		color: dimgray;
-		text-decoration: none
+		text-decoration: none;
+		width: 100%;
 	}
 	#apaisajes:hover, #aretratos:hover {
 		display: block;
@@ -255,5 +252,39 @@ img[id^=imagen]{
 		display: block;
 		width: 100%;
 		margin-bottom: 50px;
+	}
+}
+
+@media (min-width:900px){
+	#principalretratos {
+		display: block;
+		padding: 20px 10px;
+		margin: auto;
+	}
+	
+	#principalpaisajes {
+		display: block;
+		padding: 20px 10px;
+		margin: auto;
+	}
+	#imagen3, #imagen2, #imagen1 {
+	width: 30%;
+	padding: 2px;
+	margin-left: 1%;
+}
+
+    #imagen4, #imagen5, #imagen6 {
+	width: 30%;
+	padding: 2px;
+	margin-left: 1%;
+}
+	#piedepagina {
+		display: flex;
+		font-size: 0.90em;
+		padding: 10px;
+	}
+	
+	#terminos, #redessociales, #derechos {
+		margin-left: 30px;
 	}
 }
